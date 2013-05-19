@@ -1,74 +1,105 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="lithium.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Lithium : " />
+	<style>
+		h1 {
+			font-family: 'Lobster', cursive;
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		}
 
-    <title>Lithium</title>
-  </head>
+		#header {
+			height: 100px;
+			padding-top: 20px; 
+		}
 
-  <body>
+		#header h1 {
+			font-size: 150px;
+			line-height: 110px;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="row" id="header">
+			<div class="twelve">
+				<h1>Lithium</h1>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<hr>
+		</div>
+		<div class="row">
+			<div class="three if-phone-hide">
+				<a href="#" class="button pozitive large to-right">Download (1.0.0 alpha)</a>
+				<a href="#" class="button negative">It just works</a>
+			</div>
+			<div class="nine last">
+				<p class="text-justify"><b>Hello there, Friend!</b><br />Since, you're here you are probably wondering what Lithium is. So here it goes: It is a <i>responsive framework</i> built by <a href="http://ferallabs.net">Feral Labs</a>. Everything you see here was built using this framework and the design can be change in a matter of a few seconds.</p>
+				<div class="row">
+					<div class="six"><h3>What's "Responsive"?</h3><p>See for yourself, if you are on a PC, try to resize the window and enjoy. <b>Everything rearranges to create a mobile friendly website</b>. Lithium does this by itself, from its core, there is no need for extra code to support mobile browsers.</p></div>
+					<div class="six last"><h3>The Grid</h3><p><b>Lithium</b> has a fully responsive grid, that by default is 12 blocks, but it can be used in any way with a few minor changes, we even have a 24-grid version if that's what you like.</p></div>
+				</div>
+				
+				<h4>Demonstration</h4>
+				<p>Here's a quick demonstration of how to use the grid system.</p>
+				<div class="row">
+					<div class="twelve text-center">
+						<div class="inset">Header</div>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="three text-center">
+						<div class="inset">Sidebar</div>
+					</div>
+					<div class="nine last text-center">
+						<div class="inset">Content</div>
+					</div>
+				</div>
+				<hr>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/FeralLabs/Lithium">View on GitHub</a>
-
-          <h1 id="project_title">Lithium</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/FeralLabs/Lithium/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/FeralLabs/Lithium/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Lithium maintained by <a href="https://github.com/FeralLabs">FeralLabs</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+				<h3>Buttons!!!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, cum, ducimus neque reprehenderit eaque non repudiandae expedita eos corporis placeat!</p>
+				<h4>Size</h4>
+				<div class="row">
+					<div class="six">
+						<table>
+							<thead>
+								<tr>
+									<th>Code</th>
+									<th>Result</th>
+								</tr>
+							</thead>
+							<tbody class="text-center">
+								<tr>
+									<td>Mini</td>
+									<td><a href="#" class="button mini">Mini</a></td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td><a href="#" class="button small">Small</a></td>
+								</tr>
+								<tr>
+									<td>Normal</td>
+									<td><a href="#" class="button">Normal</a></td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td><a href="#" class="button large">Large</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 </html>
