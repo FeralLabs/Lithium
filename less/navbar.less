@@ -1,0 +1,56 @@
+.fixed-to-top {
+	position: fixed;
+	top: 0;
+}
+
+.top-nav {
+	height: 40px;
+	background-color: @navbarBackgroundColor;
+	width: 100%;
+	border-top: darken(@navbarBackgroundColor, 5%) 4px solid;
+	overflow: hidden;
+	border-bottom: darken(@navbarBackgroundColor, 1%) 1px solid;
+	font-size: @baseFontSize - 1px;
+	//font-weight: bold;
+
+	form {
+		input[type="text"] {
+			background-color: lighten(@navbarBackgroundColor, 5%);
+			border: 1px solid lighten(@navbarBackgroundColor, 3%);
+			margin-left: 10px;
+			width: 300px;
+			color: lighten(@navbarBackgroundColor, 40%);
+			padding: 10px;
+		}
+	}
+
+	ul {
+
+		li {
+			&:first-child {
+				a {
+					border-left: none;
+				}
+			}
+
+			float: left;
+			
+			a {
+				color: lighten(@navbarBackgroundColor, 30%);
+				display: block;
+				
+				text-shadow: 1px 1px 0px darken(@navbarBackgroundColor, 3%);
+
+				padding: 7px 20px;
+				
+				border-left: darken(@navbarBackgroundColor, 2%) 1px solid;
+
+
+				&:hover {
+					color: lighten(@navbarBackgroundColor, 50%);
+					background-color: lighten(@navbarBackgroundColor, 3%);
+				}
+			}
+		}
+	}
+}

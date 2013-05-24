@@ -1,0 +1,638 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'grunt-cli' ]
+2 info using npm@1.2.21
+3 info using node@v0.10.7
+4 verbose node symlink /usr/bin/node
+5 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/package.json
+6 warn package.json Lithium@0.0.0 No repository field.
+7 warn package.json Lithium@0.0.0 No readme data.
+8 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt/package.json
+9 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-contrib-less/package.json
+10 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/less/package.json
+11 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/package.json
+12 verbose readDependencies using package.json deps
+13 verbose cache add [ 'grunt-cli', null ]
+14 verbose cache add name=undefined spec="grunt-cli" args=["grunt-cli",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'grunt-cli',
+15 verbose parsed url   path: 'grunt-cli',
+15 verbose parsed url   href: 'grunt-cli' }
+16 silly lockFile 671ef8ac-grunt-cli grunt-cli
+17 verbose lock grunt-cli /home/claudiu/.npm/671ef8ac-grunt-cli.lock
+18 silly lockFile 671ef8ac-grunt-cli grunt-cli
+19 silly lockFile 671ef8ac-grunt-cli grunt-cli
+20 verbose addNamed [ 'grunt-cli', '' ]
+21 verbose addNamed [ null, '' ]
+22 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+23 verbose lock grunt-cli@ /home/claudiu/.npm/d63f3d0b-grunt-cli.lock
+24 silly addNameRange { name: 'grunt-cli', range: '', hasData: false }
+25 verbose url raw grunt-cli
+26 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli' ]
+27 verbose url resolved https://registry.npmjs.org/grunt-cli
+28 info trying registry request attempt 1 at 20:54:26
+29 verbose etag "F54TJAZN9L80XXUJO8JCHZCLE"
+30 http GET https://registry.npmjs.org/grunt-cli
+31 http 304 https://registry.npmjs.org/grunt-cli
+32 silly registry.get cb [ 304,
+32 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+32 silly registry.get     etag: '"F54TJAZN9L80XXUJO8JCHZCLE"',
+32 silly registry.get     date: 'Fri, 24 May 2013 17:54:28 GMT',
+32 silly registry.get     'content-length': '0' } ]
+33 verbose etag grunt-cli from cache
+34 silly addNameRange number 2 { name: 'grunt-cli', range: '', hasData: true }
+35 silly addNameRange versions [ 'grunt-cli',
+35 silly addNameRange   [ '0.1.0',
+35 silly addNameRange     '0.1.1',
+35 silly addNameRange     '0.1.2',
+35 silly addNameRange     '0.1.3',
+35 silly addNameRange     '0.1.4',
+35 silly addNameRange     '0.1.5',
+35 silly addNameRange     '0.1.6',
+35 silly addNameRange     '0.1.7',
+35 silly addNameRange     '0.1.8' ] ]
+36 verbose addNamed [ 'grunt-cli', '0.1.8' ]
+37 verbose addNamed [ '0.1.8', '0.1.8' ]
+38 silly lockFile b69d88c5-grunt-cli-0-1-8 grunt-cli@0.1.8
+39 verbose lock grunt-cli@0.1.8 /home/claudiu/.npm/b69d88c5-grunt-cli-0-1-8.lock
+40 verbose read json /home/claudiu/.npm/grunt-cli/0.1.8/package/package.json
+41 silly lockFile b69d88c5-grunt-cli-0-1-8 grunt-cli@0.1.8
+42 silly lockFile b69d88c5-grunt-cli-0-1-8 grunt-cli@0.1.8
+43 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+44 silly lockFile d63f3d0b-grunt-cli grunt-cli@
+45 silly resolved [ { name: 'grunt-cli',
+45 silly resolved     description: 'The grunt command line interface.',
+45 silly resolved     version: '0.1.8',
+45 silly resolved     author: { name: 'Grunt Team' },
+45 silly resolved     homepage: 'http://gruntjs.com/',
+45 silly resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt-cli.git' },
+45 silly resolved     bugs: { url: 'http://github.com/gruntjs/grunt-cli/issues' },
+45 silly resolved     licenses: [ [Object] ],
+45 silly resolved     bin: { grunt: 'bin/grunt' },
+45 silly resolved     engines: { node: '>= 0.8.0' },
+45 silly resolved     scripts: { test: 'node bin/grunt test' },
+45 silly resolved     preferGlobal: true,
+45 silly resolved     dependencies: { nopt: '~1.0.10', 'findup-sync': '~0.1.0', resolve: '~0.3.1' },
+45 silly resolved     devDependencies: { grunt: '~0.4.0', 'grunt-contrib-jshint': '~0.2.0' },
+45 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+45 silly resolved     readme: '# grunt-cli [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-cli.png?branch=master)](http://travis-ci.org/gruntjs/grunt-cli)\n> The Grunt command line interface.\n\nInstall this globally and you\'ll have access to the `grunt` command anywhere on your system.\n\n```shell\nnpm install -g grunt-cli\n```\n\n**Note:** The job of the `grunt` command is to load and run the version of Grunt you have installed locally to your project, irrespective of its version.  Starting with Grunt v0.4, you should never install Grunt itself globally.  For more information about why, [please read this](http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation).\n\nSee the [Getting Started](http://gruntjs.com/getting-started) guide for more information.\n\n## Shell tab auto-completion\nTo enable bash tab auto-completion for Grunt, add the following line to your `~/.bashrc` file. Currently, the only supported shell is bash.\n\n```bash\neval "$(grunt --completion=bash)"\n```\n\n## Installing grunt-cli locally\nIf you don\'t have administrator rights, you may need to install grunt-cli locally to your project using `npm install grunt-cli --save-dev`.  Unfortunately, this will not put the `grunt` executable in your PATH.  You\'ll need to specify its explicit location when executing it, eg: `./node_modules/.bin/grunt`,\n\nNote: Using grunt-cli in this way is unsupported.\n',
+45 silly resolved     readmeFilename: 'README.md',
+45 silly resolved     _id: 'grunt-cli@0.1.8',
+45 silly resolved     _from: 'grunt-cli@' } ]
+46 info install grunt-cli@0.1.8 into /home/claudiu/Desktop/Proiecte/Lithium
+47 info installOne grunt-cli@0.1.8
+48 verbose from cache /home/claudiu/.npm/grunt-cli/0.1.8/package/package.json
+49 info /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli unbuild
+50 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/package.json
+51 verbose tar unpack /home/claudiu/.npm/grunt-cli/0.1.8/package.tgz
+52 silly lockFile 4b547837-e-Lithium-node-modules-grunt-cli /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli
+53 verbose lock /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli /home/claudiu/.npm/4b547837-e-Lithium-node-modules-grunt-cli.lock
+54 silly lockFile b9cedc0c--npm-grunt-cli-0-1-8-package-tgz /home/claudiu/.npm/grunt-cli/0.1.8/package.tgz
+55 verbose lock /home/claudiu/.npm/grunt-cli/0.1.8/package.tgz /home/claudiu/.npm/b9cedc0c--npm-grunt-cli-0-1-8-package-tgz.lock
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm extractEntry .npmignore
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm extractEntry Gruntfile.js
+61 silly gunzTarPerm extractEntry .travis.yml
+62 silly gunzTarPerm extractEntry AUTHORS
+63 silly gunzTarPerm extractEntry LICENSE-MIT
+64 silly gunzTarPerm extractEntry bin/grunt
+65 silly gunzTarPerm extractEntry completion/bash
+66 silly gunzTarPerm extractEntry lib/cli.js
+67 silly gunzTarPerm extractEntry lib/completion.js
+68 silly gunzTarPerm extractEntry lib/info.js
+69 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/package.json
+70 silly lockFile 4b547837-e-Lithium-node-modules-grunt-cli /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli
+71 silly lockFile 4b547837-e-Lithium-node-modules-grunt-cli /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli
+72 silly lockFile b9cedc0c--npm-grunt-cli-0-1-8-package-tgz /home/claudiu/.npm/grunt-cli/0.1.8/package.tgz
+73 silly lockFile b9cedc0c--npm-grunt-cli-0-1-8-package-tgz /home/claudiu/.npm/grunt-cli/0.1.8/package.tgz
+74 info preinstall grunt-cli@0.1.8
+75 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/package.json
+76 verbose readDependencies using package.json deps
+77 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/package.json
+78 verbose readDependencies using package.json deps
+79 verbose cache add [ 'nopt@~1.0.10', null ]
+80 verbose cache add name=undefined spec="nopt@~1.0.10" args=["nopt@~1.0.10",null]
+81 verbose parsed url { protocol: null,
+81 verbose parsed url   slashes: null,
+81 verbose parsed url   auth: null,
+81 verbose parsed url   host: null,
+81 verbose parsed url   port: null,
+81 verbose parsed url   hostname: null,
+81 verbose parsed url   hash: null,
+81 verbose parsed url   search: null,
+81 verbose parsed url   query: null,
+81 verbose parsed url   pathname: 'nopt@~1.0.10',
+81 verbose parsed url   path: 'nopt@~1.0.10',
+81 verbose parsed url   href: 'nopt@~1.0.10' }
+82 verbose cache add name="nopt" spec="~1.0.10" args=["nopt","~1.0.10"]
+83 verbose parsed url { protocol: null,
+83 verbose parsed url   slashes: null,
+83 verbose parsed url   auth: null,
+83 verbose parsed url   host: null,
+83 verbose parsed url   port: null,
+83 verbose parsed url   hostname: null,
+83 verbose parsed url   hash: null,
+83 verbose parsed url   search: null,
+83 verbose parsed url   query: null,
+83 verbose parsed url   pathname: '~1.0.10',
+83 verbose parsed url   path: '~1.0.10',
+83 verbose parsed url   href: '~1.0.10' }
+84 verbose addNamed [ 'nopt', '~1.0.10' ]
+85 verbose addNamed [ null, '>=1.0.10- <1.1.0-' ]
+86 silly lockFile 79f78dba-nopt-1-0-10 nopt@~1.0.10
+87 verbose lock nopt@~1.0.10 /home/claudiu/.npm/79f78dba-nopt-1-0-10.lock
+88 verbose cache add [ 'findup-sync@~0.1.0', null ]
+89 verbose cache add name=undefined spec="findup-sync@~0.1.0" args=["findup-sync@~0.1.0",null]
+90 verbose parsed url { protocol: null,
+90 verbose parsed url   slashes: null,
+90 verbose parsed url   auth: null,
+90 verbose parsed url   host: null,
+90 verbose parsed url   port: null,
+90 verbose parsed url   hostname: null,
+90 verbose parsed url   hash: null,
+90 verbose parsed url   search: null,
+90 verbose parsed url   query: null,
+90 verbose parsed url   pathname: 'findup-sync@~0.1.0',
+90 verbose parsed url   path: 'findup-sync@~0.1.0',
+90 verbose parsed url   href: 'findup-sync@~0.1.0' }
+91 verbose cache add name="findup-sync" spec="~0.1.0" args=["findup-sync","~0.1.0"]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: '~0.1.0',
+92 verbose parsed url   path: '~0.1.0',
+92 verbose parsed url   href: '~0.1.0' }
+93 verbose addNamed [ 'findup-sync', '~0.1.0' ]
+94 verbose addNamed [ null, '>=0.1.0- <0.2.0-' ]
+95 silly lockFile 625605b9-findup-sync-0-1-0 findup-sync@~0.1.0
+96 verbose lock findup-sync@~0.1.0 /home/claudiu/.npm/625605b9-findup-sync-0-1-0.lock
+97 silly addNameRange { name: 'nopt', range: '>=1.0.10- <1.1.0-', hasData: false }
+98 verbose cache add [ 'resolve@~0.3.1', null ]
+99 verbose cache add name=undefined spec="resolve@~0.3.1" args=["resolve@~0.3.1",null]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: 'resolve@~0.3.1',
+100 verbose parsed url   path: 'resolve@~0.3.1',
+100 verbose parsed url   href: 'resolve@~0.3.1' }
+101 verbose cache add name="resolve" spec="~0.3.1" args=["resolve","~0.3.1"]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: '~0.3.1',
+102 verbose parsed url   path: '~0.3.1',
+102 verbose parsed url   href: '~0.3.1' }
+103 verbose addNamed [ 'resolve', '~0.3.1' ]
+104 verbose addNamed [ null, '>=0.3.1- <0.4.0-' ]
+105 silly lockFile 7958d065-resolve-0-3-1 resolve@~0.3.1
+106 verbose lock resolve@~0.3.1 /home/claudiu/.npm/7958d065-resolve-0-3-1.lock
+107 silly addNameRange { name: 'findup-sync',
+107 silly addNameRange   range: '>=0.1.0- <0.2.0-',
+107 silly addNameRange   hasData: false }
+108 silly addNameRange { name: 'resolve', range: '>=0.3.1- <0.4.0-', hasData: false }
+109 verbose url raw nopt
+110 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+111 verbose url resolved https://registry.npmjs.org/nopt
+112 info trying registry request attempt 1 at 20:54:29
+113 verbose etag "EN7BWQ7ESOJ7R0SBIBZDB8EEM"
+114 http GET https://registry.npmjs.org/nopt
+115 verbose url raw findup-sync
+116 verbose url resolving [ 'https://registry.npmjs.org/', './findup-sync' ]
+117 verbose url resolved https://registry.npmjs.org/findup-sync
+118 info trying registry request attempt 1 at 20:54:29
+119 verbose etag "BXIX5F9F608QS414YZPBS4ACC"
+120 http GET https://registry.npmjs.org/findup-sync
+121 verbose url raw resolve
+122 verbose url resolving [ 'https://registry.npmjs.org/', './resolve' ]
+123 verbose url resolved https://registry.npmjs.org/resolve
+124 info trying registry request attempt 1 at 20:54:29
+125 verbose etag "AGVXE9065DV8WRHG6W2FFW7CV"
+126 http GET https://registry.npmjs.org/resolve
+127 http 304 https://registry.npmjs.org/findup-sync
+128 silly registry.get cb [ 304,
+128 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+128 silly registry.get     etag: '"BXIX5F9F608QS414YZPBS4ACC"',
+128 silly registry.get     date: 'Fri, 24 May 2013 17:54:34 GMT',
+128 silly registry.get     'content-length': '0' } ]
+129 verbose etag findup-sync from cache
+130 silly addNameRange number 2 { name: 'findup-sync', range: '>=0.1.0- <0.2.0-', hasData: true }
+131 silly addNameRange versions [ 'findup-sync', [ '0.1.0', '0.1.1', '0.1.2' ] ]
+132 verbose addNamed [ 'findup-sync', '0.1.2' ]
+133 verbose addNamed [ '0.1.2', '0.1.2' ]
+134 silly lockFile d7184b2b-findup-sync-0-1-2 findup-sync@0.1.2
+135 verbose lock findup-sync@0.1.2 /home/claudiu/.npm/d7184b2b-findup-sync-0-1-2.lock
+136 verbose read json /home/claudiu/.npm/findup-sync/0.1.2/package/package.json
+137 silly lockFile d7184b2b-findup-sync-0-1-2 findup-sync@0.1.2
+138 silly lockFile d7184b2b-findup-sync-0-1-2 findup-sync@0.1.2
+139 http 304 https://registry.npmjs.org/nopt
+140 silly registry.get cb [ 304,
+140 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+140 silly registry.get     etag: '"EN7BWQ7ESOJ7R0SBIBZDB8EEM"',
+140 silly registry.get     date: 'Fri, 24 May 2013 17:54:34 GMT',
+140 silly registry.get     'content-length': '0' } ]
+141 verbose etag nopt from cache
+142 silly lockFile 625605b9-findup-sync-0-1-0 findup-sync@~0.1.0
+143 silly lockFile 625605b9-findup-sync-0-1-0 findup-sync@~0.1.0
+144 silly addNameRange number 2 { name: 'nopt', range: '>=1.0.10- <1.1.0-', hasData: true }
+145 silly addNameRange versions [ 'nopt',
+145 silly addNameRange   [ '1.0.0',
+145 silly addNameRange     '1.0.1',
+145 silly addNameRange     '1.0.2',
+145 silly addNameRange     '1.0.3',
+145 silly addNameRange     '1.0.4',
+145 silly addNameRange     '1.0.5',
+145 silly addNameRange     '1.0.6',
+145 silly addNameRange     '1.0.7',
+145 silly addNameRange     '1.0.8',
+145 silly addNameRange     '1.0.9',
+145 silly addNameRange     '1.0.10',
+145 silly addNameRange     '2.0.0',
+145 silly addNameRange     '2.1.0',
+145 silly addNameRange     '2.1.1' ] ]
+146 verbose addNamed [ 'nopt', '1.0.10' ]
+147 verbose addNamed [ '1.0.10', '1.0.10' ]
+148 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+149 verbose lock nopt@1.0.10 /home/claudiu/.npm/1be903a1-nopt-1-0-10.lock
+150 verbose read json /home/claudiu/.npm/nopt/1.0.10/package/package.json
+151 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+152 silly lockFile 1be903a1-nopt-1-0-10 nopt@1.0.10
+153 silly lockFile 79f78dba-nopt-1-0-10 nopt@~1.0.10
+154 silly lockFile 79f78dba-nopt-1-0-10 nopt@~1.0.10
+155 http 304 https://registry.npmjs.org/resolve
+156 silly registry.get cb [ 304,
+156 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+156 silly registry.get     etag: '"AGVXE9065DV8WRHG6W2FFW7CV"',
+156 silly registry.get     date: 'Fri, 24 May 2013 17:54:34 GMT',
+156 silly registry.get     'content-length': '0' } ]
+157 verbose etag resolve from cache
+158 silly addNameRange number 2 { name: 'resolve', range: '>=0.3.1- <0.4.0-', hasData: true }
+159 silly addNameRange versions [ 'resolve',
+159 silly addNameRange   [ '0.0.0',
+159 silly addNameRange     '0.0.1',
+159 silly addNameRange     '0.0.2',
+159 silly addNameRange     '0.0.3',
+159 silly addNameRange     '0.0.4',
+159 silly addNameRange     '0.1.0',
+159 silly addNameRange     '0.1.2',
+159 silly addNameRange     '0.1.3',
+159 silly addNameRange     '0.2.0',
+159 silly addNameRange     '0.2.1',
+159 silly addNameRange     '0.2.2',
+159 silly addNameRange     '0.2.3',
+159 silly addNameRange     '0.2.4',
+159 silly addNameRange     '0.2.5',
+159 silly addNameRange     '0.2.6',
+159 silly addNameRange     '0.2.7',
+159 silly addNameRange     '0.2.8',
+159 silly addNameRange     '0.3.0',
+159 silly addNameRange     '0.3.1' ] ]
+160 verbose addNamed [ 'resolve', '0.3.1' ]
+161 verbose addNamed [ '0.3.1', '0.3.1' ]
+162 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+163 verbose lock resolve@0.3.1 /home/claudiu/.npm/95464470-resolve-0-3-1.lock
+164 verbose read json /home/claudiu/.npm/resolve/0.3.1/package/package.json
+165 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+166 silly lockFile 95464470-resolve-0-3-1 resolve@0.3.1
+167 silly lockFile 7958d065-resolve-0-3-1 resolve@~0.3.1
+168 silly lockFile 7958d065-resolve-0-3-1 resolve@~0.3.1
+169 silly resolved [ { name: 'findup-sync',
+169 silly resolved     description: 'Find the first file matching a given pattern in the current directory or the nearest ancestor directory.',
+169 silly resolved     version: '0.1.2',
+169 silly resolved     homepage: 'https://github.com/cowboy/node-findup-sync',
+169 silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+169 silly resolved     repository:
+169 silly resolved      { type: 'git',
+169 silly resolved        url: 'git://github.com/cowboy/node-findup-sync.git' },
+169 silly resolved     bugs: { url: 'https://github.com/cowboy/node-findup-sync/issues' },
+169 silly resolved     licenses: [ [Object] ],
+169 silly resolved     main: 'lib/findup-sync',
+169 silly resolved     engines: { node: '>= 0.6.0' },
+169 silly resolved     scripts: { test: 'grunt nodeunit' },
+169 silly resolved     dependencies: { glob: '~3.1.21', lodash: '~1.0.1' },
+169 silly resolved     devDependencies:
+169 silly resolved      { grunt: '~0.4.0',
+169 silly resolved        'grunt-contrib-jshint': '~0.2.0',
+169 silly resolved        'grunt-contrib-nodeunit': '~0.1.2' },
+169 silly resolved     keywords: [ 'find', 'glob', 'file' ],
+169 silly resolved     readme: '# findup-sync\n\nFind the first file matching a given pattern in the current directory or the nearest ancestor directory.\n\n## Getting Started\nInstall the module with: `npm install findup-sync`\n\n```js\nvar findup = require(\'findup-sync\');\n\n// Start looking in the CWD.\nvar filepath1 = findup(\'{a,b}*.txt\');\n\n// Start looking somewhere else, and ignore case (probably a good idea).\nvar filepath2 = findup(\'{a,b}*.txt\', {cwd: \'/some/path\', nocase: true});\n```\n\n## Usage\n\n```js\nfindup(patternOrPatterns [, minimatchOptions])\n```\n\n### patternOrPatterns\nType: `String` or `Array`  \nDefault: none\n\nOne or more wildcard glob patterns. Or just filenames.\n\n### minimatchOptions\nType: `Object`  \nDefault: `{}`\n\nOptions to be passed to [minimatch](https://github.com/isaacs/minimatch).\n\nNote that if you want to start in a different directory than the current working directory, specify a `cwd` property here.\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n2013-03-08 - v0.1.2 - Updated dependencies. Fixed a Node 0.9.x bug. Updated unit tests to work cross-platform.  \n2012-11-15 - v0.1.1 - Now works without an options object.  \n2012-11-01 - v0.1.0 - Initial release.\n',
+169 silly resolved     readmeFilename: 'README.md',
+169 silly resolved     _id: 'findup-sync@0.1.2',
+169 silly resolved     _from: 'findup-sync@~0.1.0' },
+169 silly resolved   { name: 'nopt',
+169 silly resolved     version: '1.0.10',
+169 silly resolved     description: 'Option parsing for Node, supporting types, shorthands, etc. Used by npm.',
+169 silly resolved     author:
+169 silly resolved      { name: 'Isaac Z. Schlueter',
+169 silly resolved        email: 'i@izs.me',
+169 silly resolved        url: 'http://blog.izs.me/' },
+169 silly resolved     main: 'lib/nopt.js',
+169 silly resolved     scripts: { test: 'node lib/nopt.js' },
+169 silly resolved     repository: { type: 'git', url: 'http://github.com/isaacs/nopt' },
+169 silly resolved     bin: { nopt: './bin/nopt.js' },
+169 silly resolved     license:
+169 silly resolved      { type: 'MIT',
+169 silly resolved        url: 'https://github.com/isaacs/nopt/raw/master/LICENSE' },
+169 silly resolved     dependencies: { abbrev: '1' },
+169 silly resolved     readme: 'If you want to write an option parser, and have it be good, there are\ntwo ways to do it.  The Right Way, and the Wrong Way.\n\nThe Wrong Way is to sit down and write an option parser.  We\'ve all done\nthat.\n\nThe Right Way is to write some complex configurable program with so many\noptions that you go half-insane just trying to manage them all, and put\nit off with duct-tape solutions until you see exactly to the core of the\nproblem, and finally snap and write an awesome option parser.\n\nIf you want to write an option parser, don\'t write an option parser.\nWrite a package manager, or a source control system, or a service\nrestarter, or an operating system.  You probably won\'t end up with a\ngood one of those, but if you don\'t give up, and you are relentless and\ndiligent enough in your procrastination, you may just end up with a very\nnice option parser.\n\n## USAGE\n\n    // my-program.js\n    var nopt = require("nopt")\n      , Stream = require("stream").Stream\n      , path = require("path")\n      , knownOpts = { "foo" : [String, null]\n                    , "bar" : [Stream, Number]\n                    , "baz" : path\n                    , "bloo" : [ "big", "medium", "small" ]\n                    , "flag" : Boolean\n                    , "pick" : Boolean\n                    , "many" : [String, Array]\n                    }\n      , shortHands = { "foofoo" : ["--foo", "Mr. Foo"]\n                     , "b7" : ["--bar", "7"]\n                     , "m" : ["--bloo", "medium"]\n                     , "p" : ["--pick"]\n                     , "f" : ["--flag"]\n                     }\n                 // everything is optional.\n                 // knownOpts and shorthands default to {}\n                 // arg list defaults to process.argv\n                 // slice defaults to 2\n      , parsed = nopt(knownOpts, shortHands, process.argv, 2)\n    console.log(parsed)\n\nThis would give you support for any of the following:\n\n```bash\n$ node my-program.js --foo "blerp" --no-flag\n{ "foo" : "blerp", "flag" : false }\n\n$ node my-program.js ---bar 7 --foo "Mr. Hand" --flag\n{ bar: 7, foo: "Mr. Hand", flag: true }\n\n$ node my-program.js --foo "blerp" -f -----p\n{ foo: "blerp", flag: true, pick: true }\n\n$ node my-program.js -fp --foofoo\n{ foo: "Mr. Foo", flag: true, pick: true }\n\n$ node my-program.js --foofoo -- -fp  # -- stops the flag parsing.\n{ foo: "Mr. Foo", argv: { remain: ["-fp"] } }\n\n$ node my-program.js --blatzk 1000 -fp # unknown opts are ok.\n{ blatzk: 1000, flag: true, pick: true }\n\n$ node my-program.js --blatzk true -fp # but they need a value\n{ blatzk: true, flag: true, pick: true }\n\n$ node my-program.js --no-blatzk -fp # unless they start with "no-"\n{ blatzk: false, flag: true, pick: true }\n\n$ node my-program.js --baz b/a/z # known paths are resolved.\n{ baz: "/Users/isaacs/b/a/z" }\n\n# if Array is one of the types, then it can take many\n# values, and will always be an array.  The other types provided\n# specify what types are allowed in the list.\n\n$ node my-program.js --many 1 --many null --many foo\n{ many: ["1", "null", "foo"] }\n\n$ node my-program.js --many foo\n{ many: ["foo"] }\n```\n\nRead the tests at the bottom of `lib/nopt.js` for more examples of\nwhat this puppy can do.\n\n## Types\n\nThe following types are supported, and defined on `nopt.typeDefs`\n\n* String: A normal string.  No parsing is done.\n* path: A file system path.  Gets resolved against cwd if not absolute.\n* url: A url.  If it doesn\'t parse, it isn\'t accepted.\n* Number: Must be numeric.\n* Date: Must parse as a date. If it does, and `Date` is one of the options,\n  then it will return a Date object, not a string.\n* Boolean: Must be either `true` or `false`.  If an option is a boolean,\n  then it does not need a value, and its presence will imply `true` as\n  the value.  To negate boolean flags, do `--no-whatever` or `--whatever\n  false`\n* NaN: Means that the option is strictly not allowed.  Any value will\n  fail.\n* Stream: An object matching the "Stream" class in node.  Valuable\n  for use when validating programmatically.  (npm uses this to let you\n  supply any WriteStream on the `outfd` and `logfd` config options.)\n* Array: If `Array` is specified as one of the types, then the value\n  will be parsed as a list of options.  This means that multiple values\n  can be specified, and that the value will always be an array.\n\nIf a type is an array of values not on this list, then those are\nconsidered valid values.  For instance, in the example above, the\n`--bloo` option can only be one of `"big"`, `"medium"`, or `"small"`,\nand any other value will be rejected.\n\nWhen parsing unknown fields, `"true"`, `"false"`, and `"null"` will be\ninterpreted as their JavaScript equivalents, and numeric values will be\ninterpreted as a number.\n\nYou can also mix types and values, or multiple types, in a list.  For\ninstance `{ blah: [Number, null] }` would allow a value to be set to\neither a Number or null.\n\nTo define a new type, add it to `nopt.typeDefs`.  Each item in that\nhash is an object with a `type` member and a `validate` method.  The\n`type` member is an object that matches what goes in the type list.  The\n`validate` method is a function that gets called with `validate(data,\nkey, val)`.  Validate methods should assign `data[key]` to the valid\nvalue of `val` if it can be handled properly, or return boolean\n`false` if it cannot.\n\nYou can also call `nopt.clean(data, types, typeDefs)` to clean up a\nconfig object and remove its invalid properties.\n\n## Error Handling\n\nBy default, nopt outputs a warning to standard error when invalid\noptions are found.  You can change this behavior by assigning a method\nto `nopt.invalidHandler`.  This method will be called with\nthe offending `nopt.invalidHandler(key, val, types)`.\n\nIf no `nopt.invalidHandler` is assigned, then it will console.error\nits whining.  If it is assigned to boolean `false` then the warning is\nsuppressed.\n\n## Abbreviations\n\nYes, they are supported.  If you define options like this:\n\n```javascript\n{ "foolhardyelephants" : Boolean\n, "pileofmonkeys" : Boolean }\n```\n\nThen this will work:\n\n```bash\nnode program.js --foolhar --pil\nnode program.js --no-f --pileofmon\n# etc.\n```\n\n## Shorthands\n\nShorthands are a hash of shorter option names to a snippet of args that\nthey expand to.\n\nIf multiple one-character shorthands are all combined, and the\ncombination does not unambiguously match any other option or shorthand,\nthen they will be broken up into their constituent parts.  For example:\n\n```json\n{ "s" : ["--loglevel", "silent"]\n, "g" : "--global"\n, "f" : "--force"\n, "p" : "--parseable"\n, "l" : "--long"\n}\n```\n\n```bash\nnpm ls -sgflp\n# just like doing this:\nnpm ls --loglevel silent --global --force --long --parseable\n```\n\n## The Rest of the args\n\nThe config object returned by nopt is given a special member called\n`argv`, which is an object with the following fields:\n\n* `remain`: The remaining args after all the parsing has occurred.\n* `original`: The args as they originally appeared.\n* `cooked`: The args after flags and shorthands are expanded.\n\n## Slicing\n\nNode programs are called with more or less the exact argv as it appears\nin C land, after the v8 and node-specific options have been plucked off.\nAs such, `argv[0]` is always `node` and `argv[1]` is always the\nJavaScript program being run.\n\nThat\'s usually not very useful to you.  So they\'re sliced off by\ndefault.  If you want them, then you can pass in `0` as the last\nargument, or any other number that you\'d like to slice off the start of\nthe list.\n',
+169 silly resolved     readmeFilename: 'README.md',
+169 silly resolved     bugs: { url: 'https://github.com/isaacs/nopt/issues' },
+169 silly resolved     _id: 'nopt@1.0.10',
+169 silly resolved     _from: 'nopt@~1.0.10' },
+169 silly resolved   { name: 'resolve',
+169 silly resolved     description: 'resolve like require.resolve() on behalf of files asynchronously and synchronously',
+169 silly resolved     version: '0.3.1',
+169 silly resolved     repository:
+169 silly resolved      { type: 'git',
+169 silly resolved        url: 'git://github.com/substack/node-resolve.git' },
+169 silly resolved     main: 'index.js',
+169 silly resolved     keywords: [ 'resolve', 'require', 'node', 'module' ],
+169 silly resolved     scripts: { test: 'tap test/*.js' },
+169 silly resolved     devDependencies: { tap: '~0.4.0' },
+169 silly resolved     license: 'MIT',
+169 silly resolved     author:
+169 silly resolved      { name: 'James Halliday',
+169 silly resolved        email: 'mail@substack.net',
+169 silly resolved        url: 'http://substack.net' },
+169 silly resolved     readme: '# resolve\n\nimplements the [node `require.resolve()`\nalgorithm](http://nodejs.org/docs/v0.4.8/api/all.html#all_Together...)\nsuch that you can `require.resolve()` on behalf of a file asynchronously and\nsynchronously\n\n[![build status](https://secure.travis-ci.org/substack/node-resolve.png)](http://travis-ci.org/substack/node-resolve)\n\n# example\n\nasynchronously resolve:\n\n``` js\nvar resolve = require(\'resolve\');\nresolve(\'tap\', { basedir: __dirname }, function (err, res) {\n    if (err) console.error(err)\n    else console.log(res)\n});\n```\n\n```\n$ node example/async.js\n/home/substack/projects/node-resolve/node_modules/tap/lib/main.js\n```\n\nsynchronously resolve:\n\n``` js\nvar resolve = require(\'resolve\');\nvar res = resolve.sync(\'tap\', { basedir: __dirname });\nconsole.log(res);\n```\n\n```\n$ node example/sync.js\n/home/substack/projects/node-resolve/node_modules/tap/lib/main.js\n```\n\n# methods\n\n``` js\nvar resolve = require(\'resolve\')\n```\n\n## resolve(pkg, opts={}, cb)\n\nAsynchronously resolve the module path string `pkg` into `cb(err, res)`.\n\noptions are:\n\n* opts.basedir - directory to begin resolving from\n\n* opts.extensions - array of file extensions to search in order\n\n* opts.readFile - how to read files asynchronously\n\n* opts.isFile - function to asynchronously test whether a file exists\n\n* opts.packageFilter - transform the parsed package.json contents before looking\nat the "main" field\n\n* opts.paths - require.paths array to use if nothing is found on the normal\nnode_modules recursive walk (probably don\'t use this)\n\ndefault `opts` values:\n\n``` javascript\n{\n    paths: [],\n    basedir: __dirname,\n    extensions: [ \'.js\' ],\n    readFile: fs.readFile,\n    isFile: function (file, cb) {\n        fs.stat(file, function (err, stat) {\n            if (err && err.code === \'ENOENT\') cb(null, false)\n            else if (err) cb(err)\n            else cb(null, stat.isFile())\n        });\n    }\n}\n```\n\n## resolve.sync(pkg, opts)\n\nSynchronously resolve the module path string `pkg`, returning the result and\nthrowing an error when `pkg` can\'t be resolved.\n\noptions are:\n\n* opts.basedir - directory to begin resolving from\n\n* opts.extensions - array of file extensions to search in order\n\n* opts.readFile - how to read files synchronously\n\n* opts.isFile - function to synchronously test whether a file exists\n\n* opts.packageFilter - transform the parsed package.json contents before looking\nat the "main" field\n\n* opts.paths - require.paths array to use if nothing is found on the normal\nnode_modules recursive walk (probably don\'t use this)\n\ndefault `opts` values:\n\n``` javascript\n{\n    paths: [],\n    basedir: __dirname,\n    extensions: [ \'.js\' ],\n    readFileSync: fs.readFileSync,\n    isFile: function (file) {\n        try { return fs.statSync(file).isFile() }\n        catch (e) { return false }\n    }\n}\n````\n\n## resolve.isCore(pkg)\n\nReturn whether a package is in core.\n\n# install\n\nWith [npm](https://npmjs.org) do:\n\n```\nnpm install resolve\n```\n\n# license\n\nMIT\n',
+169 silly resolved     readmeFilename: 'readme.markdown',
+169 silly resolved     bugs: { url: 'https://github.com/substack/node-resolve/issues' },
+169 silly resolved     _id: 'resolve@0.3.1',
+169 silly resolved     _from: 'resolve@~0.3.1' } ]
+170 info install findup-sync@0.1.2 into /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli
+171 info install nopt@1.0.10 into /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli
+172 info install resolve@0.3.1 into /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli
+173 info installOne findup-sync@0.1.2
+174 info installOne nopt@1.0.10
+175 info installOne resolve@0.3.1
+176 verbose from cache /home/claudiu/.npm/findup-sync/0.1.2/package/package.json
+177 info /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync unbuild
+178 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync/package.json
+179 verbose from cache /home/claudiu/.npm/nopt/1.0.10/package/package.json
+180 info /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt unbuild
+181 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt/package.json
+182 verbose from cache /home/claudiu/.npm/resolve/0.3.1/package/package.json
+183 info /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve unbuild
+184 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve/package.json
+185 verbose tar unpack /home/claudiu/.npm/findup-sync/0.1.2/package.tgz
+186 silly lockFile 0b95661a-unt-cli-node-modules-findup-sync /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync
+187 verbose lock /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync /home/claudiu/.npm/0b95661a-unt-cli-node-modules-findup-sync.lock
+188 silly lockFile 381c6103-pm-findup-sync-0-1-2-package-tgz /home/claudiu/.npm/findup-sync/0.1.2/package.tgz
+189 verbose lock /home/claudiu/.npm/findup-sync/0.1.2/package.tgz /home/claudiu/.npm/381c6103-pm-findup-sync-0-1-2-package-tgz.lock
+190 verbose tar unpack /home/claudiu/.npm/nopt/1.0.10/package.tgz
+191 silly lockFile 4da3196e-ules-grunt-cli-node-modules-nopt /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt
+192 verbose lock /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt /home/claudiu/.npm/4da3196e-ules-grunt-cli-node-modules-nopt.lock
+193 silly lockFile 0b76dda6-udiu-npm-nopt-1-0-10-package-tgz /home/claudiu/.npm/nopt/1.0.10/package.tgz
+194 verbose lock /home/claudiu/.npm/nopt/1.0.10/package.tgz /home/claudiu/.npm/0b76dda6-udiu-npm-nopt-1-0-10-package-tgz.lock
+195 verbose tar unpack /home/claudiu/.npm/resolve/0.3.1/package.tgz
+196 silly lockFile 09a691e0-s-grunt-cli-node-modules-resolve /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve
+197 verbose lock /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve /home/claudiu/.npm/09a691e0-s-grunt-cli-node-modules-resolve.lock
+198 silly lockFile 724c2739-iu-npm-resolve-0-3-1-package-tgz /home/claudiu/.npm/resolve/0.3.1/package.tgz
+199 verbose lock /home/claudiu/.npm/resolve/0.3.1/package.tgz /home/claudiu/.npm/724c2739-iu-npm-resolve-0-3-1-package-tgz.lock
+200 silly gunzTarPerm modes [ '755', '644' ]
+201 silly gunzTarPerm modes [ '755', '644' ]
+202 silly gunzTarPerm modes [ '755', '644' ]
+203 silly gunzTarPerm extractEntry package.json
+204 silly gunzTarPerm extractEntry package.json
+205 silly gunzTarPerm extractEntry .npmignore
+206 silly gunzTarPerm extractEntry README.md
+207 silly gunzTarPerm extractEntry .npmignore
+208 silly gunzTarPerm extractEntry README.md
+209 silly gunzTarPerm extractEntry package.json
+210 silly gunzTarPerm extractEntry Gruntfile.js
+211 silly gunzTarPerm extractEntry .jshintrc
+212 silly gunzTarPerm extractEntry LICENSE
+213 silly gunzTarPerm extractEntry bin/nopt.js
+214 silly gunzTarPerm extractEntry LICENSE
+215 silly gunzTarPerm extractEntry index.js
+216 silly gunzTarPerm extractEntry LICENSE-MIT
+217 silly gunzTarPerm extractEntry lib/findup-sync.js
+218 silly gunzTarPerm extractEntry examples/my-program.js
+219 silly gunzTarPerm extractEntry lib/nopt.js
+220 silly gunzTarPerm extractEntry .travis.yml
+221 silly gunzTarPerm extractEntry example/async.js
+222 silly gunzTarPerm extractEntry test/findup-sync_test.js
+223 silly gunzTarPerm extractEntry test/fixtures/a/b/bar.txt
+224 silly gunzTarPerm extractEntry example/sync.js
+225 silly gunzTarPerm extractEntry lib/async.js
+226 silly gunzTarPerm extractEntry test/fixtures/a/foo.txt
+227 silly gunzTarPerm extractEntry test/fixtures/a.txt
+228 silly gunzTarPerm extractEntry lib/core.js
+229 silly gunzTarPerm extractEntry lib/sync.js
+230 silly gunzTarPerm extractEntry test/fixtures/aaa.txt
+231 silly gunzTarPerm extractEntry lib/core.json
+232 silly gunzTarPerm extractEntry readme.markdown
+233 silly gunzTarPerm extractEntry test/core.js
+234 silly gunzTarPerm extractEntry test/filter.js
+235 silly gunzTarPerm extractEntry test/filter_sync.js
+236 silly gunzTarPerm extractEntry test/mock.js
+237 silly gunzTarPerm extractEntry test/mock_sync.js
+238 silly gunzTarPerm extractEntry test/resolver.js
+239 silly gunzTarPerm extractEntry test/resolver_sync.js
+240 silly gunzTarPerm extractEntry test/resolver/foo.js
+241 silly gunzTarPerm extractEntry test/resolver/mug.js
+242 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt/package.json
+243 silly gunzTarPerm extractEntry test/resolver/bar/node_modules/foo/index.js
+244 silly gunzTarPerm extractEntry test/resolver/baz/package.json
+245 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync/package.json
+246 silly lockFile 4da3196e-ules-grunt-cli-node-modules-nopt /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt
+247 silly lockFile 4da3196e-ules-grunt-cli-node-modules-nopt /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt
+248 silly lockFile 0b76dda6-udiu-npm-nopt-1-0-10-package-tgz /home/claudiu/.npm/nopt/1.0.10/package.tgz
+249 silly lockFile 0b76dda6-udiu-npm-nopt-1-0-10-package-tgz /home/claudiu/.npm/nopt/1.0.10/package.tgz
+250 silly gunzTarPerm extractEntry test/resolver/baz/doom.js
+251 silly gunzTarPerm extractEntry test/resolver/baz/quux.js
+252 silly lockFile 0b95661a-unt-cli-node-modules-findup-sync /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync
+253 silly lockFile 0b95661a-unt-cli-node-modules-findup-sync /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync
+254 silly lockFile 381c6103-pm-findup-sync-0-1-2-package-tgz /home/claudiu/.npm/findup-sync/0.1.2/package.tgz
+255 silly lockFile 381c6103-pm-findup-sync-0-1-2-package-tgz /home/claudiu/.npm/findup-sync/0.1.2/package.tgz
+256 info preinstall nopt@1.0.10
+257 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt/package.json
+258 verbose readDependencies using package.json deps
+259 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/nopt/package.json
+260 verbose readDependencies using package.json deps
+261 info preinstall findup-sync@0.1.2
+262 verbose cache add [ 'abbrev@1', null ]
+263 verbose cache add name=undefined spec="abbrev@1" args=["abbrev@1",null]
+264 verbose parsed url { protocol: null,
+264 verbose parsed url   slashes: null,
+264 verbose parsed url   auth: null,
+264 verbose parsed url   host: null,
+264 verbose parsed url   port: null,
+264 verbose parsed url   hostname: null,
+264 verbose parsed url   hash: null,
+264 verbose parsed url   search: null,
+264 verbose parsed url   query: null,
+264 verbose parsed url   pathname: 'abbrev@1',
+264 verbose parsed url   path: 'abbrev@1',
+264 verbose parsed url   href: 'abbrev@1' }
+265 verbose cache add name="abbrev" spec="1" args=["abbrev","1"]
+266 verbose parsed url { protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: '1',
+266 verbose parsed url   path: '1',
+266 verbose parsed url   href: '1' }
+267 verbose addNamed [ 'abbrev', '1' ]
+268 verbose addNamed [ null, '>=1.0.0- <2.0.0-' ]
+269 silly lockFile 6830b531-abbrev-1 abbrev@1
+270 verbose lock abbrev@1 /home/claudiu/.npm/6830b531-abbrev-1.lock
+271 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync/package.json
+272 silly gunzTarPerm extractEntry test/resolver/biz/node_modules/grux/index.js
+273 silly gunzTarPerm extractEntry test/resolver/biz/node_modules/tiv/index.js
+274 silly addNameRange { name: 'abbrev', range: '>=1.0.0- <2.0.0-', hasData: false }
+275 verbose readDependencies using package.json deps
+276 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/findup-sync/package.json
+277 verbose readDependencies using package.json deps
+278 verbose url raw abbrev
+279 verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+280 verbose url resolved https://registry.npmjs.org/abbrev
+281 info trying registry request attempt 1 at 20:54:34
+282 verbose etag "9I4Q26MQBK50TT40CNYE9GPTQ"
+283 http GET https://registry.npmjs.org/abbrev
+284 verbose cache add [ 'glob@~3.1.21', null ]
+285 verbose cache add name=undefined spec="glob@~3.1.21" args=["glob@~3.1.21",null]
+286 verbose parsed url { protocol: null,
+286 verbose parsed url   slashes: null,
+286 verbose parsed url   auth: null,
+286 verbose parsed url   host: null,
+286 verbose parsed url   port: null,
+286 verbose parsed url   hostname: null,
+286 verbose parsed url   hash: null,
+286 verbose parsed url   search: null,
+286 verbose parsed url   query: null,
+286 verbose parsed url   pathname: 'glob@~3.1.21',
+286 verbose parsed url   path: 'glob@~3.1.21',
+286 verbose parsed url   href: 'glob@~3.1.21' }
+287 verbose cache add name="glob" spec="~3.1.21" args=["glob","~3.1.21"]
+288 verbose parsed url { protocol: null,
+288 verbose parsed url   slashes: null,
+288 verbose parsed url   auth: null,
+288 verbose parsed url   host: null,
+288 verbose parsed url   port: null,
+288 verbose parsed url   hostname: null,
+288 verbose parsed url   hash: null,
+288 verbose parsed url   search: null,
+288 verbose parsed url   query: null,
+288 verbose parsed url   pathname: '~3.1.21',
+288 verbose parsed url   path: '~3.1.21',
+288 verbose parsed url   href: '~3.1.21' }
+289 verbose addNamed [ 'glob', '~3.1.21' ]
+290 verbose addNamed [ null, '>=3.1.21- <3.2.0-' ]
+291 silly lockFile b5074ddc-glob-3-1-21 glob@~3.1.21
+292 verbose lock glob@~3.1.21 /home/claudiu/.npm/b5074ddc-glob-3-1-21.lock
+293 verbose cache add [ 'lodash@~1.0.1', null ]
+294 verbose cache add name=undefined spec="lodash@~1.0.1" args=["lodash@~1.0.1",null]
+295 verbose parsed url { protocol: null,
+295 verbose parsed url   slashes: null,
+295 verbose parsed url   auth: null,
+295 verbose parsed url   host: null,
+295 verbose parsed url   port: null,
+295 verbose parsed url   hostname: null,
+295 verbose parsed url   hash: null,
+295 verbose parsed url   search: null,
+295 verbose parsed url   query: null,
+295 verbose parsed url   pathname: 'lodash@~1.0.1',
+295 verbose parsed url   path: 'lodash@~1.0.1',
+295 verbose parsed url   href: 'lodash@~1.0.1' }
+296 verbose cache add name="lodash" spec="~1.0.1" args=["lodash","~1.0.1"]
+297 verbose parsed url { protocol: null,
+297 verbose parsed url   slashes: null,
+297 verbose parsed url   auth: null,
+297 verbose parsed url   host: null,
+297 verbose parsed url   port: null,
+297 verbose parsed url   hostname: null,
+297 verbose parsed url   hash: null,
+297 verbose parsed url   search: null,
+297 verbose parsed url   query: null,
+297 verbose parsed url   pathname: '~1.0.1',
+297 verbose parsed url   path: '~1.0.1',
+297 verbose parsed url   href: '~1.0.1' }
+298 verbose addNamed [ 'lodash', '~1.0.1' ]
+299 verbose addNamed [ null, '>=1.0.1- <1.1.0-' ]
+300 silly lockFile 7309cd5e-lodash-1-0-1 lodash@~1.0.1
+301 verbose lock lodash@~1.0.1 /home/claudiu/.npm/7309cd5e-lodash-1-0-1.lock
+302 silly addNameRange { name: 'glob', range: '>=3.1.21- <3.2.0-', hasData: false }
+303 silly addNameRange { name: 'lodash', range: '>=1.0.1- <1.1.0-', hasData: false }
+304 silly gunzTarPerm extractEntry test/resolver/cup.coffee
+305 silly gunzTarPerm extractEntry test/resolver/mug.coffee
+306 verbose url raw glob
+307 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+308 verbose url resolved https://registry.npmjs.org/glob
+309 info trying registry request attempt 1 at 20:54:34
+310 verbose etag "CP4KXBMJQ52LP2H1UVB8OH7W9"
+311 http GET https://registry.npmjs.org/glob
+312 verbose url raw lodash
+313 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+314 verbose url resolved https://registry.npmjs.org/lodash
+315 info trying registry request attempt 1 at 20:54:34
+316 verbose etag "9TY7XZ4DF4CPJLP53AXZ2CIC8"
+317 http GET https://registry.npmjs.org/lodash
+318 silly gunzTarPerm extractEntry test/resolver/other_path/root.js
+319 silly gunzTarPerm extractEntry test/resolver/other_path/lib/other-lib.js
+320 verbose read json /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve/package.json
+321 silly lockFile 09a691e0-s-grunt-cli-node-modules-resolve /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve
+322 silly lockFile 09a691e0-s-grunt-cli-node-modules-resolve /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve
+323 silly lockFile 724c2739-iu-npm-resolve-0-3-1-package-tgz /home/claudiu/.npm/resolve/0.3.1/package.tgz
+324 silly lockFile 724c2739-iu-npm-resolve-0-3-1-package-tgz /home/claudiu/.npm/resolve/0.3.1/package.tgz
+325 info preinstall resolve@0.3.1
+326 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve/package.json
+327 verbose readDependencies using package.json deps
+328 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve/package.json
+329 verbose readDependencies using package.json deps
+330 silly resolved []
+331 verbose about to build /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve
+332 info build /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve
+333 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules/resolve/package.json
+334 verbose linkStuff [ false,
+334 verbose linkStuff   false,
+334 verbose linkStuff   false,
+334 verbose linkStuff   '/home/claudiu/Desktop/Proiecte/Lithium/node_modules/grunt-cli/node_modules' ]
+335 info linkStuff resolve@0.3.1
+336 verbose from cache /home/claudiu/Desktop/Proiecte/Lithium/package.json
+337 error TypeError: Object.keys called on non-object
+337 error     at Function.keys (native)
+337 error     at /usr/lib/node_modules/npm/lib/build.js:111:18
+337 error     at process._tickCallback (node.js:415:13)
+338 error If you need help, you may report this log at:
+338 error     <http://github.com/isaacs/npm/issues>
+338 error or email it to:
+338 error     <npm-@googlegroups.com>
+339 error System Linux 3.5.0-28-generic
+340 error command "/usr/bin/node" "/usr/bin/npm" "install" "grunt-cli"
+341 error cwd /home/claudiu/Desktop/Proiecte/Lithium
+342 error node -v v0.10.7
+343 error npm -v 1.2.21
+344 error type called_on_non_object
+345 verbose exit [ 1, true ]

@@ -15,15 +15,34 @@
 		#header {
 			height: 100px;
 			padding-top: 20px; 
+
 		}
 
 		#header h1 {
 			font-size: 150px;
 			line-height: 110px;
 		}
+
+		body {
+			padding-top: 50px;
+		}
+
+
 	</style>
 </head>
 <body>
+	<nav class="top-nav fixed-to-top">
+		<div class="row">
+			<ul>
+				<li><a href="#">Homepage</a></li>
+				<li><a href="#">Downloads</a></li>
+				<li><a href="#">Hello</a></li>
+			</ul>
+			<form action="" class="nav-form to-right">
+				<input type="text" placeholder="search">
+			</form>
+		</div>
+	</nav>
 	<header id="header">
 		<div class="row" id="header">
 			<div class="twelve">

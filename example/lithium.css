@@ -360,7 +360,8 @@ h6 {
 .button {
   background-color: #3498db;
   display: block;
-  border-radius: 3px;
+  border-radius: 5px;
+  font-size: 17px;
   padding: 10px 20px;
   line-height: 15px;
   float: left;
@@ -394,22 +395,26 @@ h6 {
   color: #ffffff;
 }
 .mini {
-  border-radius: 3px;
+  border-radius: -2px;
+  font-size: 10px;
   padding: 3px 6px;
   line-height: 15px;
 }
 .small {
-  border-radius: 3px;
+  border-radius: 0px;
+  font-size: 12px;
   padding: 5px 10px;
   line-height: 15px;
 }
 .large {
-  border-radius: 3px;
+  border-radius: 10px;
+  font-size: 22px;
   padding: 15px 30px;
   line-height: 15px;
 }
 .huge {
-  border-radius: 3px;
+  border-radius: 15px;
+  font-size: 27px;
   padding: 20px 40px;
   line-height: 15px;
 }
@@ -433,4 +438,42 @@ table tbody tr td {
 }
 table tbody tr:nth-child(2n+1) {
   background-color: #ffffff;
+}
+.fixed-to-top {
+  position: fixed;
+  top: 0;
+}
+.top-nav {
+  height: 40px;
+  background-color: #2980b9;
+  width: 100%;
+  border-top: #2472a4 4px solid;
+  overflow: hidden;
+  border-bottom: #287db5 1px solid;
+  font-size: 14px;
+}
+.top-nav form input[type="text"] {
+  background-color: #2e8ece;
+  border: 1px solid #2c89c6;
+  margin-left: 10px;
+  width: 300px;
+  color: #bedcf0;
+  padding: 10px;
+}
+.top-nav ul li {
+  float: left;
+}
+.top-nav ul li:first-child a {
+  border-left: none;
+}
+.top-nav ul li a {
+  color: #94c6e7;
+  display: block;
+  text-shadow: 1px 1px 0px #2677ac;
+  padding: 7px 20px;
+  border-left: #277ab1 1px solid;
+}
+.top-nav ul li a:hover {
+  color: #e7f2fa;
+  background-color: #2c89c6;
 }

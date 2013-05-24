@@ -16,7 +16,9 @@
 }
 
 .button-size(@size) {
-	.round(3px);
+	.round(@size - 5px);
+	font-size: (@baseFontSize - (10px - @size) + 2px);
+
 	padding: @size @size*2;
 	line-height: 15px;	
 }
