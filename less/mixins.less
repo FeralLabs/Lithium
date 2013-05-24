@@ -1,0 +1,50 @@
+.round(@radius) {
+	border-radius: @radius;
+}
+
+.grid(@grid) {
+	overflow: hidden;
+	float: left;
+	margin-right: @gridGutter;
+	width: (@gridColumnWidth * @grid) + (@gridGutter * (@grid - 1))
+}
+
+.font-size(@font-size: 16){
+	@rem: (@font-size / 10);
+	font-size: @font-size * 1px;
+	font-size: ~"@{rem}rem"; 
+}
+
+.button-size(@size) {
+	.round(3px);
+	padding: @size @size*2;
+	line-height: 15px;	
+}
+
+.button-default(@baseColor) {
+	background-color: @baseColor;
+	display: block;
+	.button-size(10px);
+	float: left; 
+    clear: left; 
+	text-align: center;
+	color: lighten(@baseColor, 40%);
+	font-weight: bold;
+	border: 1px solid lighten(@baseColor, 3%);
+
+	&:hover {
+		background-color: lighten(@baseColor, 5%);
+		color: lighten(@baseColor, 80%);
+		transition: all 1s ease;
+	}
+}
+
+.button(@baseColor) {
+	background-color: @baseColor;
+	color: lighten(@baseColor, 40%);
+	border: 1px solid lighten(@baseColor, 3%);
+	&:hover {
+		background-color: lighten(@baseColor, 5%);
+		color: lighten(@baseColor, 80%);
+	}
+}

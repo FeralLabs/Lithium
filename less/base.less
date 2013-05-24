@@ -1,0 +1,63 @@
+@goldenRatio: 1.61803398874989;
+
+@ffSansSerif: "Arial";
+@ffSans: "serif";
+
+@baseWidth: 960px;
+@gridColumns: 12;
+@gridColumnWidth: 2.9%;
+@gridGutter: ((100 - (@gridColumnWidth * @gridColumns)) / (@gridColumns - 1));
+
+
+// Base stuff
+@backgroundColor: #ecf0f1;
+@baseFontColor: @midnightblue;
+@baseHeadingColor: @pomegranate; // can be @baseFontColor darkened
+@baseFontSize: 15px; // it auto converts to REM
+@baseLineHeight: @baseFontSize * @goldenRatio;
+@baseFontFamily: @ffSansSerif;
+
+@baseLinkColor: @alizarin;
+@baseLinkHoverColor: darken(@baseLinkColor, 20%);
+
+@hrColor: darken(@backgroundColor, 10%);
+
+@tableColor: @belizehole;
+
+hr {
+	border: 0;
+	color: @hrColor;
+	background-color: @hrColor;
+	height: 1px;
+	margin: 20px 0;
+}
+
+a {
+	color: @baseLinkColor;
+	text-decoration: none;
+}
+
+a:hover {
+	color: @baseLinkHoverColor;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	//text-decoration: underline;
+}
+
+
+.inset {
+	padding: 20px;
+	-webkit-box-shadow:inset 0px 2px 2px rgba(0,0,0,.5);
+	box-shadow:inset 0px 1px 2px rgba(0,0,0,.5);
+	background-color: darken(@backgroundColor, 2%);
+}
+
+.bump {
+	padding: 20px;
+	-webkit-box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+	background-color: lighten(@backgroundColor, 2%);	
+}

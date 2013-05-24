@@ -1,0 +1,29 @@
+table {
+	width: 100%;
+	margin-top: 10px;
+	.round(10px);
+
+	thead {
+		background-color: @tableColor;
+		color: lighten(@tableColor, 50%);
+		font-size: @baseFontSize - 1;
+		font-weight: bolder;
+		
+		th {
+			padding: 5px 20px;
+			border-bottom: lighten(@tableColor, 20%) 2px solid;
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				padding: 5px 20px;
+			}
+
+			&:nth-child(2n+1) {
+				background-color: lighten(@tableColor, 60%);
+			}
+		}
+	}
+}

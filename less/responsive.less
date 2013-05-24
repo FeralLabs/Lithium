@@ -1,0 +1,30 @@
+@phone-size: 480px;
+@tablet-size: 720px;
+
+.if-phone-show {
+	display: none;
+}
+
+.if-phone-hide {
+	display: inherit;
+}
+
+@media screen and (max-width: @tablet-size) {
+	.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+		.grid(12);
+	}
+
+	.container {
+		margin: 0 20px;
+	}
+}
+
+@media screen and (max-width: @phone-size) {
+	.if-phone-show {
+		display: inherit;
+	}
+
+	.if-phone-hide {
+		display: none;
+	}
+}
