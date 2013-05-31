@@ -1,7 +1,7 @@
 @goldenRatio: 1.61803398874989;
 
-@ffSansSerif: "Arial";
-@ffSans: "serif";
+@ffSansSerif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@ffSerif: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 
 @baseWidth: 960px;
 @gridColumns: 12;
@@ -13,9 +13,11 @@
 @backgroundColor: #ecf0f1;
 @baseFontColor: @midnightblue;
 @baseHeadingColor: @pomegranate; // can be @baseFontColor darkened
-@baseFontSize: 15px; // it auto converts to REM
+@baseFontSize: 14px; // it auto converts to REM
 @baseLineHeight: @baseFontSize * @goldenRatio;
 @baseFontFamily: @ffSansSerif;
+
+@baseHeadingFontFamily: @ffSerif;
 
 @baseLinkColor: @alizarin;
 @baseLinkHoverColor: darken(@baseLinkColor, 20%);
@@ -33,6 +35,18 @@ hr {
 	background-color: @hrColor;
 	height: 1px;
 	margin: 20px 0;
+}
+
+img {
+	margin: 10px;	
+}
+
+img.polaroid {
+	border: 4px solid lighten(@backgroundColor, 3%);
+}
+
+img.circle {
+	border-radius: 50%;
 }
 
 a {
@@ -62,5 +76,6 @@ a:hover {
 	padding: 20px;
 	-webkit-box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
 	box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
-	background-color: lighten(@backgroundColor, 2%);	
-}
+	background-color: lighten(@backgroundColor, 2%);
+
+	}

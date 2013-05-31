@@ -11,12 +11,18 @@ body {
 .text-right {text-align: right; }
 .text-justify {text-align: justify; }
 
+.silent {
+	color: lighten(@baseFontColor, 35%);
+}
+
 b {font-weight: bold;}
 i {font-style: italic;}
 p {padding: 10px 0}
 .heading(@size) {
 	color: @baseHeadingColor;
 	text-rendering: optimizeLegibility; 
+	font-weight: bold;
+	font-family: @baseHeadingFontFamily;
 	.font-size((@baseFontSize * @goldenRatio * (7 - @size)) / 4);
 	line-height: @baseFontSize * @goldenRatio * (7 - @size) * @goldenRatio / 4;
 }

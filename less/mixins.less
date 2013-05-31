@@ -9,6 +9,10 @@
 	width: (@gridColumnWidth * @grid) + (@gridGutter * (@grid - 1))
 }
 
+.last() {
+	margin-right: 0;
+}
+
 .font-size(@font-size: 16){
 	@rem: (@font-size / 10);
 	font-size: @font-size * 1px;
@@ -16,10 +20,10 @@
 }
 
 .button-size(@size) {
-	.round(@size - 5px);
-	font-size: (@baseFontSize - (10px - @size) + 2px);
+	.round(3px);
+	font-size: @size + 3px;
 
-	padding: @size @size*2;
+	padding: (@size - 2px) (@size*2 - 2px);
 	line-height: 15px;	
 }
 
@@ -28,15 +32,20 @@
 	display: block;
 	.button-size(10px);
 	float: left; 
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.3);
     clear: left; 
+    margin: 5px 10px;
 	text-align: center;
 	color: lighten(@baseColor, 40%);
 	font-weight: bold;
 	border: 1px solid lighten(@baseColor, 3%);
 
 	&:hover {
-		background-color: lighten(@baseColor, 5%);
-		color: lighten(@baseColor, 80%);
+		color: lighten(@baseColor, 50%);
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
 		transition: all 1s ease;
 	}
 }
